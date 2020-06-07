@@ -57,7 +57,7 @@ async def _(event):
         await event.edit(str(e))
     else:
         if photo:
-            await event.edit("now, Uploading to @Telegram ...")
+            await event.edit("now, Uploading to Telegram ...")
             file = await borg.upload_file(photo)  # pylint:disable=E0602
             try:
                 await borg(functions.photos.UploadProfilePhotoRequest(  # pylint:disable=E0602
@@ -66,7 +66,7 @@ async def _(event):
             except Exception as e:  # pylint:disable=C0103,W0703
                 await event.edit(str(e))
             else:
-                await event.edit("My profile picture was succesfully changed")
+                await event.edit("Profile Picture succesfully changed to Replied Image")
     try:
         os.remove(photo)
     except Exception as e:  # pylint:disable=C0103,W0703
