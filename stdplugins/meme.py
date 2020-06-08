@@ -32,7 +32,7 @@ async def meme(event):
 
     memeVar = event.text
 
-    sleepValue = 3
+    sleepValue = 5
 
     memeVar = memeVar[6:] 
 
